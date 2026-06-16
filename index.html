@@ -26,25 +26,26 @@ body{
 
 .card{
     width:100%;
-    max-width:500px;
+    max-width:460px;
     background:#050505;
     border:1px solid #222;
     border-radius:35px;
-    padding:50px 30px;
+    padding:40px 25px;
     text-align:center;
     box-shadow:0 0 80px rgba(0,0,0,.7);
 }
 
+/* 🔻 LOGO MÁS PEQUEÑO */
 .logo-wrap{
-    width:180px;
-    height:180px;
-    margin:0 auto 35px;
+    width:130px;
+    height:130px;
+    margin:0 auto 25px;
     border-radius:50%;
     overflow:hidden;
-    border:4px solid #00c853;
+    border:3px solid #00c853;
     box-shadow:
-        0 0 25px rgba(0,200,83,.7),
-        0 0 60px rgba(0,200,83,.25);
+        0 0 20px rgba(0,200,83,.6),
+        0 0 40px rgba(0,200,83,.2);
 }
 
 .logo-img{
@@ -54,66 +55,62 @@ body{
     display:block;
 }
 
+/* 🔻 BADGE MÁS PEQUEÑO */
 .badge{
     display:inline-block;
     background:#061b0d;
     color:#00d26a;
     border:1px solid #0c5d2f;
-    padding:14px 28px;
+    padding:10px 18px;
     border-radius:999px;
-    font-size:18px;
+    font-size:14px;
     font-weight:700;
-    letter-spacing:2px;
-    margin-bottom:28px;
+    letter-spacing:1px;
+    margin-bottom:20px;
 }
 
+/* 🔻 NEQUI MÁS PEQUEÑO */
 .nequi-pill{
     display:inline-flex;
     align-items:center;
-    gap:10px;
+    gap:8px;
     background:#12001f;
     border:1px solid #6d28d9;
     border-radius:999px;
-    padding:16px 30px;
-    margin-bottom:35px;
+    padding:10px 18px;
+    margin-bottom:25px;
 }
 
 .nequi-dot{
-    width:14px;
-    height:14px;
+    width:10px;
+    height:10px;
     border-radius:50%;
     background:#b66cff;
 }
 
 .nequi-pill span{
     color:#b66cff;
-    font-size:18px;
+    font-size:14px;
     font-weight:700;
 }
 
-/* 🔥 TEXTO BLANCO PREMIUM */
+/* 🔥 TEXTO MÁS HORIZONTAL */
 .text-box{
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 22px;
-    padding: 24px;
-    margin-bottom: 35px;
+    border-radius: 18px;
+    padding: 18px 20px;
+    margin-bottom: 25px;
 
     color: #ffffff;
-    font-size: 20px;
-    line-height: 1.8;
+    font-size: 16px;
+    line-height: 1.5;
     font-weight: 600;
     text-align: center;
 
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(10px);
     box-shadow:
-        0 0 25px rgba(255,255,255,0.06),
-        inset 0 0 10px rgba(255,255,255,0.05);
-}
-
-.text-box:hover{
-    transform: scale(1.02);
-    transition: 0.2s ease;
+        0 0 20px rgba(255,255,255,0.05);
 }
 
 /* BOTÓN */
@@ -122,58 +119,56 @@ body{
     display:flex;
     align-items:center;
     justify-content:center;
-    gap:12px;
+    gap:10px;
     text-decoration:none;
     color:#fff;
-    font-size:22px;
+    font-size:18px;
     font-weight:700;
-    padding:24px;
-    border-radius:22px;
+    padding:18px;
+    border-radius:18px;
     background:linear-gradient(135deg,#0088cc,#0056d6);
-    box-shadow:0 0 25px rgba(0,136,204,.6);
+    box-shadow:0 0 20px rgba(0,136,204,.5);
     transition:.2s;
 }
 
 .btn:hover{
-    transform:translateY(-3px);
+    transform:translateY(-2px);
 }
 
 .btn svg{
-    width:28px;
-    height:28px;
+    width:24px;
+    height:24px;
     fill:white;
 }
 
+/* FOOTER */
 .footer-note{
-    margin-top:25px;
+    margin-top:18px;
     color:#8d8d8d;
-    font-size:18px;
+    font-size:14px;
 }
 
 /* MOBILE */
 @media(max-width:600px){
 
     .card{
-        padding:40px 25px;
+        padding:35px 20px;
     }
 
     .logo-wrap{
-        width:170px;
-        height:170px;
+        width:120px;
+        height:120px;
     }
 
     .text-box{
-        font-size:18px;
+        font-size:15px;
     }
 
     .btn{
-        font-size:20px;
-        padding:22px;
+        font-size:16px;
+        padding:16px;
     }
 
-    .footer-note{
-        font-size:16px;
-    }
 }
 
 </style>
@@ -184,33 +179,24 @@ body{
 <div class="card">
 
     <div class="logo-wrap">
-        <img
-            src="https://i.ibb.co/HDVTMBBk/ANTRAX.png"
-            alt="ANTRAX EMPIRE"
-            class="logo-img">
+        <img src="https://i.ibb.co/HDVTMBBk/ANTRAX.png" class="logo-img">
     </div>
 
-    <div class="badge">
-        ANTRAX OFICIAL
-    </div>
+    <div class="badge">ANTRAX OFICIAL</div>
 
     <div class="nequi-pill">
         <div class="nequi-dot"></div>
         <span>FACTURA CON TU NEQUI</span>
     </div>
 
-    <!-- 🔥 TEXTO ORIGINAL SOLO MEJORADO VISUALMENTE -->
+    <!-- 🔥 TEXTO MÁS HORIZONTAL -->
     <div class="text-box">
-        Te enseño a ganar 2 palos diarios con tu NEQUI.<br>
-        Para ver toda la información, únete al grupo<br>
-        de Telegram presionando el botón de abajo 👇
+        Te enseño a ganar 2 palos diarios con tu NEQUI. 
+        Para ver toda la información, únete al grupo de TELEGRAM
+        presionando el botón de abajo 👇
     </div>
 
-    <a
-        href="https://t.me/+-ZkFXRE8dao3ZDgx"
-        class="btn"
-        target="_blank">
-
+    <a href="https://t.me/+-ZkFXRE8dao3ZDgx" class="btn" target="_blank">
         <svg viewBox="0 0 24 24">
             <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.504-1.356 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
         </svg>
@@ -219,7 +205,7 @@ body{
     </a>
 
     <div class="footer-note">
-        Solo desliza, únete y entérate de todo 👆
+        Solo desliza 👆
     </div>
 
 </div>
