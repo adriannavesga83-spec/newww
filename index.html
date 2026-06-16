@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,6 +6,7 @@
 <title>ANTRAX EMPIRE</title>
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -15,36 +15,38 @@
 
 body{
     font-family:'Segoe UI',sans-serif;
-    background:#0d0d0d;
+    background:#000;
     color:#fff;
     min-height:100vh;
     display:flex;
-    align-items:center;
     justify-content:center;
-    padding:24px 16px;
+    align-items:center;
+    padding:20px;
 }
 
 .card{
-    background:#1a1a1a;
-    border:1px solid #2a2a2a;
-    border-radius:24px;
-    max-width:420px;
     width:100%;
-    padding:40px 28px;
+    max-width:500px;
+    background:#050505;
+    border:1px solid #222;
+    border-radius:35px;
+    padding:50px 30px;
     text-align:center;
-    box-shadow:0 24px 64px rgba(0,0,0,.5);
+    box-shadow:
+        0 0 60px rgba(0,0,0,.8),
+        0 0 120px rgba(0,200,83,.08);
 }
 
 .logo-wrap{
-    width:140px;
-    height:140px;
+    width:180px;
+    height:180px;
+    margin:0 auto 35px;
     border-radius:50%;
     overflow:hidden;
-    margin:0 auto 24px;
-    border:3px solid #69f0ae;
+    border:4px solid #00c853;
     box-shadow:
-      0 0 20px rgba(105,240,174,.35),
-      0 0 40px rgba(105,240,174,.15);
+        0 0 25px rgba(0,200,83,.7),
+        0 0 60px rgba(0,200,83,.25);
 }
 
 .logo-img{
@@ -56,88 +58,119 @@ body{
 
 .badge{
     display:inline-block;
-    background:#1e2d1e;
-    color:#69f0ae;
-    font-size:12px;
-    font-weight:700;
-    letter-spacing:1.5px;
-    text-transform:uppercase;
-    padding:8px 16px;
+    background:#061b0d;
+    color:#00d26a;
+    border:1px solid #0c5d2f;
+    padding:14px 28px;
     border-radius:999px;
-    border:1px solid #2e5c2e;
-    margin-bottom:20px;
+    font-size:18px;
+    font-weight:700;
+    letter-spacing:2px;
+    margin-bottom:28px;
 }
 
 .nequi-pill{
     display:inline-flex;
     align-items:center;
-    gap:8px;
-    background:#1a0a2e;
-    border:1px solid #5a2d82;
+    justify-content:center;
+    gap:10px;
+    background:#12001f;
+    border:1px solid #6d28d9;
     border-radius:999px;
-    padding:10px 18px;
-    margin-bottom:24px;
+    padding:16px 30px;
+    margin-bottom:35px;
 }
 
 .nequi-dot{
-    width:10px;
-    height:10px;
+    width:14px;
+    height:14px;
     border-radius:50%;
-    background:#c084fc;
+    background:#b66cff;
 }
 
 .nequi-pill span{
-    font-size:14px;
-    color:#c084fc;
+    color:#b66cff;
+    font-size:18px;
     font-weight:700;
 }
 
 p{
-    font-size:15px;
-    color:#b0b0b0;
-    line-height:1.7;
-    margin-bottom:32px;
+    font-size:20px;
+    line-height:1.8;
+    color:#c5c5c5;
+    margin-bottom:40px;
 }
 
 .btn{
+    width:100%;
     display:flex;
     align-items:center;
     justify-content:center;
-    gap:10px;
-    width:100%;
-    padding:16px 24px;
-    border-radius:14px;
+    gap:12px;
     text-decoration:none;
-    font-size:16px;
-    font-weight:700;
-    background:linear-gradient(135deg,#229ed9,#1a7cc4);
     color:#fff;
-    box-shadow:0 8px 24px rgba(34,158,217,.35);
+    font-size:22px;
+    font-weight:700;
+    padding:24px;
+    border-radius:22px;
+    background:linear-gradient(135deg,#0088cc,#0056d6);
+    box-shadow:
+        0 0 25px rgba(0,136,204,.6),
+        0 0 50px rgba(0,136,204,.2);
     transition:.2s;
 }
 
 .btn:hover{
-    transform:translateY(-2px);
-}
-
-.btn:active{
-    transform:scale(.97);
+    transform:translateY(-3px);
 }
 
 .btn svg{
-    width:22px;
-    height:22px;
-    fill:#fff;
+    width:28px;
+    height:28px;
+    fill:white;
 }
 
 .footer-note{
-    margin-top:24px;
-    font-size:12px;
-    color:#555;
+    margin-top:25px;
+    color:#8d8d8d;
+    font-size:18px;
 }
+
+@media(max-width:600px){
+
+    .card{
+        padding:40px 25px;
+    }
+
+    .logo-wrap{
+        width:170px;
+        height:170px;
+    }
+
+    .badge{
+        font-size:16px;
+    }
+
+    .nequi-pill span{
+        font-size:16px;
+    }
+
+    p{
+        font-size:18px;
+    }
+
+    .btn{
+        font-size:20px;
+        padding:22px;
+    }
+
+    .footer-note{
+        font-size:16px;
+    }
+}
+
 </style>
 </head>
-
 <body>
 
 <div class="card">
@@ -145,12 +178,13 @@ p{
     <div class="logo-wrap">
         <img
             src="https://i.ibb.co/HDVTMBBk/ANTRAX.png"
-            alt="Logo ANTRAX EMPIRE"
-            class="logo-img"
-        >
+            alt="ANTRAX EMPIRE"
+            class="logo-img">
     </div>
 
-    <div class="badge">ANTRAX OFICIAL</div>
+    <div class="badge">
+        ANTRAX OFICIAL
+    </div>
 
     <div class="nequi-pill">
         <div class="nequi-dot"></div>
@@ -159,19 +193,19 @@ p{
 
     <p>
         Te enseño a ganar 2 palos diarios con tu NEQUI.
-        Para ver toda la información, únete a mi grupo
-        de TELEGRAM con el botón de abajo 👇
+        Para ver toda la información, únete al grupo
+        de Telegram presionando el botón de abajo 👇
     </p>
 
     <a
         href="https://t.me/+-ZkFXRE8dao3ZDgx"
         class="btn"
-        target="_blank"
-        rel="noopener noreferrer"
-    >
+        target="_blank">
+
         <svg viewBox="0 0 24 24">
             <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.504-1.356 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
         </svg>
+
         Unirme al grupo de Telegram
     </a>
 
@@ -183,4 +217,3 @@ p{
 
 </body>
 </html>
-```
