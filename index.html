@@ -32,9 +32,7 @@ body{
     border-radius:35px;
     padding:50px 30px;
     text-align:center;
-    box-shadow:
-        0 0 60px rgba(0,0,0,.8),
-        0 0 120px rgba(0,200,83,.08);
+    box-shadow:0 0 80px rgba(0,0,0,.7);
 }
 
 .logo-wrap{
@@ -72,7 +70,6 @@ body{
 .nequi-pill{
     display:inline-flex;
     align-items:center;
-    justify-content:center;
     gap:10px;
     background:#12001f;
     border:1px solid #6d28d9;
@@ -94,13 +91,32 @@ body{
     font-weight:700;
 }
 
-p{
-    font-size:20px;
-    line-height:1.8;
-    color:#c5c5c5;
-    margin-bottom:40px;
+/* 🔥 TEXTO BLANCO PREMIUM */
+.text-box{
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 22px;
+    padding: 24px;
+    margin-bottom: 35px;
+
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.8;
+    font-weight: 600;
+    text-align: center;
+
+    backdrop-filter: blur(12px);
+    box-shadow:
+        0 0 25px rgba(255,255,255,0.06),
+        inset 0 0 10px rgba(255,255,255,0.05);
 }
 
+.text-box:hover{
+    transform: scale(1.02);
+    transition: 0.2s ease;
+}
+
+/* BOTÓN */
 .btn{
     width:100%;
     display:flex;
@@ -114,9 +130,7 @@ p{
     padding:24px;
     border-radius:22px;
     background:linear-gradient(135deg,#0088cc,#0056d6);
-    box-shadow:
-        0 0 25px rgba(0,136,204,.6),
-        0 0 50px rgba(0,136,204,.2);
+    box-shadow:0 0 25px rgba(0,136,204,.6);
     transition:.2s;
 }
 
@@ -136,6 +150,7 @@ p{
     font-size:18px;
 }
 
+/* MOBILE */
 @media(max-width:600px){
 
     .card{
@@ -147,15 +162,7 @@ p{
         height:170px;
     }
 
-    .badge{
-        font-size:16px;
-    }
-
-    .nequi-pill span{
-        font-size:16px;
-    }
-
-    p{
+    .text-box{
         font-size:18px;
     }
 
@@ -171,6 +178,7 @@ p{
 
 </style>
 </head>
+
 <body>
 
 <div class="card">
@@ -191,11 +199,12 @@ p{
         <span>FACTURA CON TU NEQUI</span>
     </div>
 
-    <p>
-        Te enseño a ganar 2 palos diarios con tu NEQUI.
-        Para ver toda la información, únete al grupo
+    <!-- 🔥 TEXTO ORIGINAL SOLO MEJORADO VISUALMENTE -->
+    <div class="text-box">
+        Te enseño a ganar 2 palos diarios con tu NEQUI.<br>
+        Para ver toda la información, únete al grupo<br>
         de Telegram presionando el botón de abajo 👇
-    </p>
+    </div>
 
     <a
         href="https://t.me/+-ZkFXRE8dao3ZDgx"
@@ -206,7 +215,7 @@ p{
             <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.504-1.356 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
         </svg>
 
-        Unirme al grupo de Telegram
+        👉UNETE AL GRUPO AQUI👈
     </a>
 
     <div class="footer-note">
